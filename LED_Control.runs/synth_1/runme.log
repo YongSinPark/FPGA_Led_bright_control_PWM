@@ -1,0 +1,261 @@
+
+*** Running vivado
+    with args -log TOP.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source TOP.tcl -notrace
+Command: synth_design -top TOP -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14316
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1073.945 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP' [D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/TOP.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Prescaler_for_1MHz' [D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/Prescaler_for_1MHz.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Prescaler_for_1MHz' (1#1) [D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/Prescaler_for_1MHz.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Counter' [D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/Counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Counter' (2#1) [D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/Counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Comparator' [D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/Comparator.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Comparator' (3#1) [D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/Comparator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX' [D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/MUX.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/MUX.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'MUX' (4#1) [D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/MUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Button' [D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/Button.v:3]
+	Parameter PUSHED bound to: 1'b1 
+	Parameter RELEASED bound to: 1'b0 
+	Parameter TRUE bound to: 1'b1 
+	Parameter FALSE bound to: 1'b0 
+	Parameter DEBOUNCE bound to: 500000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Button' (5#1) [D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/Button.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FSM_light_button' [D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/FSM_light_button.v:3]
+	Parameter S_LED_0 bound to: 3'b000 
+	Parameter S_LED_1 bound to: 3'b001 
+	Parameter S_LED_2 bound to: 3'b010 
+	Parameter S_LED_3 bound to: 3'b011 
+	Parameter S_LED_4 bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/FSM_light_button.v:27]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/FSM_light_button.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'FSM_light_button' (6#1) [D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/FSM_light_button.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'TOP' (7#1) [D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/TOP.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1075.340 ; gain = 1.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1075.340 ; gain = 1.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1075.340 ; gain = 1.395
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1075.340 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/xilinx_2020/LED_Control/LED_Control.srcs/constrs_1/imports/xilinx_2020/MY_Basys-3-Master.xdc]
+Finished Parsing XDC File [D:/xilinx_2020/LED_Control/LED_Control.srcs/constrs_1/imports/xilinx_2020/MY_Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/xilinx_2020/LED_Control/LED_Control.srcs/constrs_1/imports/xilinx_2020/MY_Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1190.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1190.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1190.145 ; gain = 116.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1190.145 ; gain = 116.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1190.145 ; gain = 116.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'FSM_light_button'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 S_LED_0 |                            00001 |                              000
+                 S_LED_1 |                            00010 |                              001
+                 S_LED_2 |                            00100 |                              010
+                 S_LED_3 |                            01000 |                              011
+                 S_LED_4 |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cur_state_reg' using encoding 'one-hot' in module 'FSM_light_button'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1190.145 ; gain = 116.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 6     
+	   2 Input    6 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 12    
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1190.145 ; gain = 116.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1190.145 ; gain = 116.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1203.543 ; gain = 129.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1208.098 ; gain = 134.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1214.867 ; gain = 140.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1214.867 ; gain = 140.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1214.867 ; gain = 140.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1214.867 ; gain = 140.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1214.867 ; gain = 140.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1214.867 ; gain = 140.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    48|
+|3     |LUT1   |     4|
+|4     |LUT2   |    10|
+|5     |LUT3   |    37|
+|6     |LUT4   |    44|
+|7     |LUT5   |    57|
+|8     |LUT6   |    34|
+|9     |FDCE   |   123|
+|10    |FDPE   |     1|
+|11    |IBUF   |     5|
+|12    |OBUF   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1214.867 ; gain = 140.922
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 1214.867 ; gain = 26.117
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1214.867 ; gain = 140.922
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1224.992 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1224.992 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1224.992 ; gain = 151.047
+INFO: [Common 17-1381] The checkpoint 'D:/xilinx_2020/LED_Control/LED_Control.runs/synth_1/TOP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 13 18:40:03 2022...

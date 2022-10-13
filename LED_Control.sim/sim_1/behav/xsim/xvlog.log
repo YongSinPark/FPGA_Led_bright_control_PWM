@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/Button.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Button
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2020/LED_Control/LED_Control.srcs/sim_1/new/tb_LED_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_LED_Control
+WARNING: [VRFC 10-8374] loop variable declaration is not allowed in this mode of Verilog [D:/xilinx_2020/LED_Control/LED_Control.srcs/sim_1/new/tb_LED_Control.v:77]

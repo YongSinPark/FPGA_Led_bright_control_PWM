@@ -1,0 +1,13 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/xilinx_2020/LED_Control/LED_Control.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+D:/xilinx_2020/LED_Control/LED_Control.srcs/sim_1/new/tb_LED_Control.v,1665653016,verilog,,,,tb_LED_Control,,,,,,,,
+D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/Button.v,1665653352,verilog,,D:/xilinx_2020/LED_Control/LED_Control.srcs/sim_1/new/tb_LED_Control.v,,Button,,,,,,,,
+D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/Comparator.v,1665649703,verilog,,D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/Counter.v,,Comparator,,,,,,,,
+D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/Counter.v,1665651683,verilog,,D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/FSM_light_button.v,,Counter,,,,,,,,
+D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/FSM_light_button.v,1665649857,verilog,,D:/xilinx_2020/LED_Control/LED_Control.srcs/sim_1/new/tb_LED_Control.v,,FSM_light_button,,,,,,,,
+D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/MUX.v,1665650891,verilog,,D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/Prescaler_for_1MHz.v,,MUX,,,,,,,,
+D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/Prescaler_for_1MHz.v,1665650311,verilog,,D:/xilinx_2020/LED_Control/LED_Control.srcs/sim_1/new/tb_LED_Control.v,,Prescaler_for_1MHz,,,,,,,,
+D:/xilinx_2020/LED_Control/LED_Control.srcs/sources_1/new/TOP.v,1665648383,verilog,,,,TOP,,,,,,,,
